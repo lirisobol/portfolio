@@ -11,8 +11,8 @@ export default function Avatar() {
             />
           </div>
           <div className="ml-5">
-            <p className="text-xl font-medium text-gray-100 group-hover:text-gray-200">Liri Sobol</p>
-            <p className="text-md font-medium text-gray-100 group-hover:text-gray-200">Fullstack Developer</p>
+            <p className="text-lg font-medium text-gray-100 group-hover:text-gray-200">Liri Sobol</p>
+            <p className="text-md font-light text-gray-100 group-hover:text-gray-200">Fullstack Developer</p>
           </div>
         </div>
       </a>

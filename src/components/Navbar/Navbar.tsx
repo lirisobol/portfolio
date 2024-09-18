@@ -4,10 +4,11 @@ import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Avatar from '../Avatar/Avatar'
+import { NavLink } from 'react-router-dom'
 
 const navigation = [
-  { name: 'Me', href: '#' },
-  { name: 'Projects', href: '#' },
+  { name: 'Me', href: '/me' },
+  { name: 'Projects', href: '/projects' },
 ]
 
 export default function Navbar() {
@@ -32,9 +33,7 @@ export default function Navbar() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-white">
-                {item.name}
-              </a>
+                <NavLink className={"text-white"} key={item.name} to={item.href} >{item.name}</NavLink>
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -60,15 +59,9 @@ export default function Navbar() {
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/25">
                 <div className="space-y-2 py-6">
-                  {navigation.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800"
-                    >
-                      {item.name}
-                    </a>
-                  ))}
+                    {navigation.map((item) => (
+                    <NavLink className={"text-white"} key={item.name} to={item.href} >{item.name}</NavLink>
+                    ))}
                 </div>
                 <div className="py-6">
                     <button>

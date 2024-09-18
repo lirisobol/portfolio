@@ -6,7 +6,7 @@ function App() {
     return (
         <div className="h-svh w-100">
             <Navbar />
-            <Home />
+            <Home />        
         </div>
     )
 }

@@ -1,4 +1,4 @@
-
+import { Routing } from "../routes/Router"
 export const Home = ():JSX.Element => {
 
     return (
@@ -21,34 +21,40 @@ export const Home = ():JSX.Element => {
                         className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
                     />
                 </div>
-                <div className="h-full flex flex-col justify-start py-40 px-10 lg:px-40 gap-10">
-                    <div className="flex flex-col">
-                        <h3 className="font-bold text-white text-6xl mb-5">Liri Sobol</h3>
-                        <p className="text-white text-2xl w-full lg:w-2/6">
-                            Full Stack Developer with a strong passion for creating appealing user interfaces and delivering seamless user experiences 
-                        </p>
+                <div className="flex flex-row justify-center py-10 px-10 h-full w-full gap-20">
+                    <div className="h-full flex flex-col justify-center px-20 gap-10 w-full">
+                        <div className="flex flex-col">
+                            <h3 className="font-semibold text-white text-6xl mb-5">Liri Sobol</h3>
+                            <p className="font-light text-white text-2xl w-full">
+                                Full Stack Developer with a strong passion for creating appealing user interfaces and delivering seamless user experiences 
+                            </p>
+                        </div>
+                        <div className="flex flex-row gap-10">
+                            <button
+                                type="button"
+                                className="rounded-lg bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                >
+                                Projects
+                            </button>
+                            <button
+                                type="button"
+                                className="rounded-lg bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                >
+                                Me
+                            </button>
+                            <button
+                                type="button"
+                                className="rounded-lg bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                >
+                                Stack
+                            </button>
+                        </div>
                     </div>
-                    <div className="flex flex-row gap-10">
-                        <button
-                            type="button"
-                            className="rounded-lg bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                            >
-                            Projects
-                        </button>
-                        <button
-                            type="button"
-                            className="rounded-lg bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                            >
-                            Me
-                        </button>
-                        <button
-                            type="button"
-                            className="rounded-lg bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                            >
-                            Stack
-                        </button>
+                    <div className="bg-gray-700 w-full h-full rounded-lg">
+                        <Routing />
                     </div>
                 </div>
+
 
             </div>
         </div>
