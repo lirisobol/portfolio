@@ -1,8 +1,13 @@
+import Navbar from "./components/Navbar/Navbar"
+import { Home } from "./pages/Home"
 
 function App() {
 
     return (
-        <div>Hello</div>
+        <div className="h-svh w-100">
+            <Navbar />
+            <Home />
+        </div>
     )
 }
 
