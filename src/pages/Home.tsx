@@ -21,12 +21,12 @@ export const Home = ():JSX.Element => {
                         className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
                     />
                 </div>
-                <div className="flex flex-row justify-center py-10 px-10 h-full w-full gap-20">
-                    <div className="h-full flex flex-col justify-center px-20 gap-10 w-full">
+                <div className="flex flex-row justify-center py-10 px-8 h-full w-full gap-20">
+                    <div className="h-full flex flex-col justify-center items-center px-20 gap-10 w-full">
                         <div className="flex flex-col">
-                            <h3 className="font-semibold text-white text-6xl mb-5">Liri Sobol</h3>
-                            <p className="font-light text-white text-2xl w-full">
-                                Full Stack Developer with a strong passion for creating appealing user interfaces and delivering seamless user experiences 
+                            <h3 className="font-semibold text-white text-6xl">Liri Sobol</h3>
+                            <p className="font-light text-white text-2xl px-1">
+                                Full Stack Developer
                             </p>
                         </div>
                         <div className="flex flex-row gap-10">
@@ -50,7 +50,7 @@ export const Home = ():JSX.Element => {
                             </button>
                         </div>
                     </div>
-                    <div className="bg-gray-700 w-full h-full rounded-lg">
+                    <div className="border text-white w-full h-full rounded-lg p-4">
                         <Routing />
                     </div>
                 </div>
