@@ -12,3 +12,13 @@ body, html {
     min-width: 100;
     width: 100%;
 }
+
+.h-very-large {
+    height: 250vh; 
+}
+.scroll-snap {
+    scroll-snap-type: y proximity;
+    overflow-y: scroll;
+}
+
+

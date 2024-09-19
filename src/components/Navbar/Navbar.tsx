@@ -5,6 +5,7 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Avatar from '../Avatar/Avatar'
 import { NavLink } from 'react-router-dom'
+import AnimatedNavLink from '../Animations/AnimatedNavLink'
 
 const navigation = [
   { name: 'Me', href: '/me' },
@@ -33,11 +34,13 @@ export default function Navbar() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-                <NavLink className={"text-white"} key={item.name} to={item.href} >{item.name}</NavLink>
+                <AnimatedNavLink key={item.name} to={item.href}>
+                  {item.name}
+                </AnimatedNavLink>
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <button className='text-white rounded-lg border p-2 hover:bg-white hover:text-gray-800'>
+            <button className='text-white rounded-lg border border-teal-200 p-2 hover:bg-teal-200 hover:text-gray-800'>
                 Resume
             </button>
           </div>
@@ -60,7 +63,7 @@ export default function Navbar() {
               <div className="-my-6 divide-y divide-gray-500/25">
                 <div className="space-y-2 py-6">
                     {navigation.map((item) => (
-                    <NavLink className={"text-white"} key={item.name} to={item.href} >{item.name}</NavLink>
+                        <NavLink className={"text-white"} key={item.name} to={item.href} >{item.name}</NavLink>
                     ))}
                 </div>
                 <div className="py-6">
