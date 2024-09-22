@@ -1,10 +1,14 @@
 import { motion } from 'framer-motion';
+import { ReactNode } from 'react';
 
 const fadeInVariants = {
     hidden: { opacity: 0, scale: 0.5},
     visible: { opacity: 1, scale: 1}
 }
-export const FadeIn = ({children}):JSX.Element => {
+interface FadeInProps {
+    children: ReactNode
+}
+export const FadeIn = ({children}:FadeInProps):JSX.Element => {
     return (
         <motion.div
             initial="hidden"

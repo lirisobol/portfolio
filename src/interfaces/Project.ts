@@ -2,7 +2,7 @@
 export interface Project {
     name: string,
     description: string;
-    tech: [],
+    tech: string[],
     links?: {
         github: {
             url: string;

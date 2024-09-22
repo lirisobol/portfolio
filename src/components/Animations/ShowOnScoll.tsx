@@ -1,6 +1,10 @@
 import { motion } from "framer-motion"
+import { ReactNode } from "react"
 
-export const ShowOnScroll = ({children}):JSX.Element => {
+interface ShowOnScrollProps {
+    children: ReactNode;
+}
+export const ShowOnScroll = ({children}: ShowOnScrollProps):JSX.Element => {
     return (
         <motion.div
             initial={{opacity: 0, scale:0.2}}
