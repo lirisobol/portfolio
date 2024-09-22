@@ -6,7 +6,7 @@ const AnimatedBackground = ():JSX.Element => {
     const backgroundColor = useTransform(
         scrollYProgress, 
         [0, 0.5, 1], 
-        ["linear-gradient(135deg, #5c54ff, #000dff)", "linear-gradient(135deg, #5c54ff, #3900ff )", "linear-gradient(135deg, #5c54ff, #000dff)"]
+        ["linear-gradient(135deg, #5c54ff, #000dff)", "linear-gradient(135deg, #5c54ff, #3900ff )", "linear-gradient(135deg, #40c9ff, #00e3fd)"]
     );
 
     return (

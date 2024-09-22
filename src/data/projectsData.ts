@@ -3,7 +3,7 @@ const base_image_url = "/assets/images/"
 export const projects: Project[] = [
     {
         name: "Portfolio Website",
-        description: "My personal portfolio built with React, TypeScript, and TailwindCSS.",
+        description: "My personal portfolio built with React, TypeScript, TailwindCSS and Framer Motion.",
         tech: {
             front: [
                 { name: "React", imageUrl: `${base_image_url}react.svg` },
