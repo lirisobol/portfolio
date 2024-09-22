@@ -1,7 +1,7 @@
-import { motion, useTransform, useViewportScroll } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 
 const AnimatedBackground = ():JSX.Element => {
-    const { scrollYProgress } = useViewportScroll();  // Tracks scroll progress (0 at top, 1 at bottom)
+    const { scrollYProgress } = useScroll();  // Tracks scroll progress (0 at top, 1 at bottom)
     
     const backgroundColor = useTransform(
         scrollYProgress, 

@@ -14,7 +14,7 @@ body, html {
 }
 
 .h-very-large {
-    height: 250vh; 
+    height: 300vh; 
 }
 .scroll-snap {
     scroll-snap-type: y proximity;
