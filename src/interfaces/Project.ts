@@ -1,15 +1,8 @@
-export interface Tech {
-    name: string;
-    imageUrl: string;
-}
-  
+
 export interface Project {
-    name: string;
+    name: string,
     description: string;
-    tech: {
-        front?: Tech[];
-        back?: Tech[];
-    };
+    tech: [],
     links?: {
         github: {
             url: string;
