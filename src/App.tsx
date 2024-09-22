@@ -1,5 +1,5 @@
 import AnimatedBackground from "./components/Animations/AnimatedBackground";
-import Navbar from "./components/Navbar/Navbar"
+import { Header } from "./components/Header/Header";
 import { Home } from "./pages/Home"
 import { Me } from "./pages/Me"
 import { Projects } from "./pages/Projects"
@@ -8,7 +8,7 @@ function App() {
     return (
         <div className="h-svh w-100 relative">
             <AnimatedBackground />
-            <Navbar />
+            <Header />
             <Home />
             <Projects />
             <Me />

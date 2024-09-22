@@ -7,12 +7,12 @@ export default function Avatar() {
             <img
               alt=""
               src="/assets/images/avatar.png"
-              className="inline-block h-14 w-14 rounded-full"
+              className="inline-block h-10 w-10 sm:h-14 sm:w-14 rounded-full shadow-sm"
             />
           </div>
-          <div className="ml-5">
-            <p className="text-lg font-medium text-gray-100 group-hover:text-gray-200">Liri Sobol</p>
-            <p className="text-md font-light text-gray-100 group-hover:text-gray-200">Fullstack Developer</p>
+          <div className="ml-2 sm:ml-5 flex flex-col items-start justify-center">
+            <p className="text-sm sm:text-lg font-medium text-white group-hover:text-gray-200">Liri Sobol</p>
+            <p className="text-xs sm:text-sm font-light text-white group-hover:text-gray-200">Fullstack Developer</p>
           </div>
         </div>
       </a>
