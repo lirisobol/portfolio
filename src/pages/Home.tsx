@@ -12,7 +12,7 @@ export const Home = ():JSX.Element => {
                         Full Stack Developer
                         <span className="text-4xl font-bold text-teal-200 animate-pulse"> .</span>
                     </p>
-                    <ContactBox />
+                    <ContactBox variant="dark"/>
                 </div>
             </div>
         </div>

@@ -7,7 +7,7 @@ export const Header = ():JSX.Element => {
             w-full flex items-center justify-between
             py-3 px-2 sm:px-4
             ">
-            <Avatar />
+            <Avatar avatarSize={24} textSize="lg" color="white"/>
             <div>
                 <ResumeButton />
             </div>
