@@ -6,7 +6,7 @@ import { Projects } from "./pages/Projects"
 
 function App() {
     return (
-        <div className="h-svh w-100 relative">
+        <div className="h-svh w-svw relative">
             <AnimatedBackground />
             <Header />
             <Home />

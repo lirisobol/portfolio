@@ -3,7 +3,7 @@ import { ContactBox } from "../components/Contact/ContactBox"
 
 export const Me = ():JSX.Element => {
     return (
-        <div className="text-gray-800 h-svh">
+        <div className="text-gray-800 h-svh w-svw">
             <div className="
                 mt-24
                 flex flex-col items-center

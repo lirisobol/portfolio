@@ -10,7 +10,7 @@ export const ProjectCard = ({ project }:ProjectCardProps): JSX.Element => {
         <ShowOnScroll>
             <div className="w-full p-10">
                 <div className="flex flex-col gap-5 mb-2">
-                    <h3 className="text-gray-800 text-3xl sm:text-5xl font-semibold">{project.name}</h3>
+                    <h3 className="text-gray-800 text-2xl sm:text-3xl md:text-4xl font-semibold">{project.name}</h3>
                     <span className="inline-flex flex-row gap-3">
                         {project.links?.github && (
                             <LinkAvatar
