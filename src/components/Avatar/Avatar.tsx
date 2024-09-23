@@ -1,17 +1,8 @@
 
 interface AvatarProps {
-    avatarSize: number;
-    textSize: string;
     color: string;
 }
-export default function Avatar({avatarSize, textSize, color}:AvatarProps):JSX.Element {
-    const textSizes = ["xs", "sm", "base", "lg", "xl", "2xl", "3xl", "4xl"];
-    const getSmSize = (textSize: string) => {
-        const size = textSizes.indexOf(textSize);
-        return textSizes[size-1]
-    };
-    const avatarSmSize = avatarSize-4;
-
+export default function Avatar({color}:AvatarProps):JSX.Element {
     if(color === "black") {
         color = "text-gray-800"
     }
@@ -21,12 +12,12 @@ export default function Avatar({avatarSize, textSize, color}:AvatarProps):JSX.El
             <img
               alt=""
               src="/assets/images/avatar.png"
-              className={`inline-block h-${avatarSmSize} w-${avatarSmSize} sm:h-${avatarSize} sm:w-${avatarSize} rounded-full shadow-sm`}
+              className={`inline-block h-10 w-10 sm:h-14 sm:w-14 rounded-full shadow-sm`}
             />
           </div>
           <div className="flex flex-col items-center justify-center sm:items-start">
-            <p className={`text-${getSmSize(textSize)} sm:text-${textSize} font-medium text-${color}`}>Liri Sobol</p>
-            <p className={`text-${getSmSize(textSize)} sm:text-${textSize} font-light text-${color}`}>Fullstack Developer</p>
+            <p className={`text-sm sm:text-lg font-medium text-${color}`}>Liri Sobol</p>
+            <p className={`text-sm sm:text-lg font-light text-${color}`}>Fullstack Developer</p>
           </div>
         </div>
     )

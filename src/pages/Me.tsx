@@ -11,7 +11,7 @@ export const Me = ():JSX.Element => {
                 px-14 py-14
                 bg-white rounded-t-full shadow-lg">
                 <div className="flex flex-col justify-center items-center">
-                    <Avatar avatarSize={24} textSize={"2xl"} color="black"/>
+                    <Avatar color="black"/>
                     <ContactBox variant="light"/>
                 </div>
                 <div className="font-light text-sm sm:text-lg md:text-xl lg:text-2xl text-center md:px-14 lg:px-42 xl:px-80">

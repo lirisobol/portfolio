@@ -8,7 +8,7 @@ interface ContactBoxProps {
 export const ContactBox = ({variant}:ContactBoxProps): JSX.Element => {
     const getStyles = (variant:string) => {
         if(variant === "dark") return "bg-white hover:bg-transparent border border-white hover:scale-105 text-indigo-700 hover:text-white rounded-lg mt-5 h-14 flex justify-evenly items-center transition-all"
-        if(variant === "light") return "bg-white hover:bg-sky-400 hover:scale-105 text-sky-400 hover:text-white rounded-lg h-14 mt-5 flex justify-evenly items-center gap-10 px-10 transition-all"
+        if(variant === "light") return "text-sky-400 rounded-lg h-14 mt-5 flex justify-evenly items-center gap-10 px-10 transition-all"
     }
     return (
         <div className={getStyles(variant)}>
