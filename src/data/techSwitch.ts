@@ -24,6 +24,10 @@ export const techToColor = (tech: string) => {
 
         case "Express.js":
             return "yellow";
+            
+        case "Redux":
+            return "teal";
+
         default:
             return "white"
     }

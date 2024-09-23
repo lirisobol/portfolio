@@ -7,6 +7,7 @@ export const TechBadge = ({tech}: TechBadgeProps):JSX.Element => {
     const color = techToColor(tech);    
     console.log(color);
     return (
+        
         <span className={`
             inline-flex items-center 
             gap-x-1.5 px-2 py-1 sm:px-3 sm:py-2 
@@ -19,5 +20,6 @@ export const TechBadge = ({tech}: TechBadgeProps):JSX.Element => {
             </svg>
             {tech}
         </span>
+        
     )
 }

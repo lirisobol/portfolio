@@ -7,7 +7,7 @@ export default function Avatar({color}:AvatarProps):JSX.Element {
         color = "text-gray-800"
     }
     return (
-        <div className="flex flex-col sm:flex-row gap-4 items-center">
+        <div className="flex gap-4">
           <div>
             <img
               alt=""
@@ -15,9 +15,9 @@ export default function Avatar({color}:AvatarProps):JSX.Element {
               className={`inline-block h-10 w-10 sm:h-14 sm:w-14 rounded-full shadow-sm`}
             />
           </div>
-          <div className="flex flex-col items-center justify-center sm:items-start">
+          <div className="flex flex-col">
             <p className={`text-sm sm:text-lg font-medium text-${color}`}>Liri Sobol</p>
-            <p className={`text-sm sm:text-lg font-light text-${color}`}>Fullstack Developer</p>
+            <p className={`text-xs sm:text-sm font-light text-${color}`}>Fullstack Developer</p>
           </div>
         </div>
     )
