@@ -3,7 +3,7 @@ import { ContactBox } from "../components/Contact/ContactBox"
 export const Home = ():JSX.Element => {
 
     return (
-        <div className="h-full w-svw font-sans">
+        <div className="h-full w-dvw font-sans">
             {/* Hero */}
             <div className="h-full flex flex-col items-center px-10 py-10 sm:py-20 md:py-30">
                 <div className="flex flex-col">
