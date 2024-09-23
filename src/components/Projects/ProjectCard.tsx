@@ -8,7 +8,7 @@ interface ProjectCardProps {
 export const ProjectCard = ({ project }:ProjectCardProps): JSX.Element => {
     return (
         <ShowOnScroll>
-            <div className="border border-2 border-gray-400 rounded-lg w-full p-10">
+            <div className="w-full p-10">
                 <div className="flex flex-col gap-5 mb-2">
                     <h3 className="text-gray-800 text-3xl sm:text-5xl font-semibold">{project.name}</h3>
                     <span className="inline-flex flex-row gap-3">

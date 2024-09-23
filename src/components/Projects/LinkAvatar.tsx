@@ -10,7 +10,8 @@ export const LinkAvatar = ({url, imageUrl}: LinksProps):JSX.Element => {
                 <img
                     alt={"alt"}
                     src={imageUrl}
-                    className="h-8 w-8 object-contain object-center"
+                    className="h-8 w-8 object-contain object-center hover:scale-110 transition-all
+"
                 />
             </a>
         </div>
