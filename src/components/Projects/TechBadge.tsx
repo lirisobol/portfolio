@@ -11,7 +11,7 @@ export const TechBadge = ({tech}: TechBadgeProps):JSX.Element => {
         <span className={`
             inline-flex items-center 
             gap-x-1.5 px-2 py-1 sm:px-3 sm:py-2 
-            text-xs sm:text-lg font-medium bg-${color}-100 text-${color}-600
+            text-xs sm:text-sm lg:text-lg font-medium bg-${color}-100 text-${color}-600
             rounded-lg
             hover:scale-110 transition-all
             `}>
